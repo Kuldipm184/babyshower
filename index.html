@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archana's Graduation & Baby Shower | Mastering Motherhood</title>
+    <meta name="description" content="RSVP for Archana's double milestone celebration — M.Sc. Graduation from SFBU and Baby Shower. May 18, 2026 in Union City, CA.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">🎓 Mastering Motherhood</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#rsvp-section" class="nav-cta">RSVP</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#rsvp-section" class="nav-cta">RSVP</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== SECTION 1: HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- Graduation Cap + Baby Rattle SVG Graphic -->
+            <div class="hero-icon" aria-hidden="true">
+                <svg viewBox="0 0 120 100" width="120" height="100">
+                    <!-- Graduation Cap -->
+                    <polygon points="60,10 10,35 60,55 110,35" fill="#D4AF37" opacity="0.9"/>
+                    <rect x="55" y="10" width="10" height="5" fill="#D4AF37"/>
+                    <line x1="95" y1="35" x2="95" y2="60" stroke="#D4AF37" stroke-width="2"/>
+                    <circle cx="95" cy="63" r="4" fill="#FFD1DC"/>
+                    <!-- Baby Rattle overlapping -->
+                    <circle cx="40" cy="75" r="14" fill="none" stroke="#FFD1DC" stroke-width="2.5" opacity="0.85"/>
+                    <line x1="54" y1="75" x2="72" y2="75" stroke="#FFD1DC" stroke-width="2.5" opacity="0.85"/>
+                    <circle cx="40" cy="75" r="4" fill="#FFD1DC" opacity="0.5"/>
+                </svg>
+            </div>
+
+            <h1 class="hero-title">Master of Science.<br>Master of Motherhood.</h1>
+            <h2 class="hero-subtitle">You are invited to a double celebration honoring <strong>Archana</strong>!</h2>
+            <p class="hero-description">Fresh off her commencement from San Francisco Bay University, we are gathering to celebrate Archana's graduation and the upcoming arrival of our baby.</p>
+
+            <!-- Countdown Timer -->
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+
+            <a href="#rsvp-section" class="hero-cta">RSVP Now</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: EVENT DETAILS ===== -->
+    <section class="section details-section" id="details">
+        <div class="section-inner">
+            <h2 class="section-title">The Details</h2>
+
+            <div class="details-grid">
+                <div class="detail-card" data-animate>
+                    <div class="detail-icon">📅</div>
+                    <h3>Date</h3>
+                    <p class="detail-main">Saturday, May 18, 2026</p>
+                    <p class="detail-sub"><em>Celebrating the May 15th Commencement!</em></p>
+                </div>
+                <div class="detail-card" data-animate>
+                    <div class="detail-icon">🕑</div>
+                    <h3>Time</h3>
+                    <p class="detail-main">2:00 PM – 6:00 PM</p>
+                </div>
+                <div class="detail-card" data-animate>
+                    <div class="detail-icon">📍</div>
+                    <h3>Location</h3>
+                    <p class="detail-main">Our Home in Union City, CA</p>
+                    <p class="detail-sub">Exact address will be provided upon RSVP confirmation</p>
+                </div>
+                <div class="detail-card" data-animate>
+                    <div class="detail-icon">👗</div>
+                    <h3>Dress Code</h3>
+                    <p class="detail-main">Smart Casual / Garden Party Attire</p>
+                    <p class="detail-sub">Comfort is key!</p>
+                </div>
+            </div>
+
+            <!-- Timeline Teaser -->
+            <div class="timeline-teaser">
+                <h3 class="timeline-teaser-title">Party Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-time">2:00 PM</span>
+                            <p>Arrivals, Icebreakers & Pani Puri Station</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-time">3:15 PM</span>
+                            <p>Celebrating Archana & Cake Cutting</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-time">4:00 PM</span>
+                            <p>The Interactive Feast Begins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: THE MENU ===== -->
+    <section class="section menu-section" id="menu">
+        <div class="section-inner">
+            <h2 class="section-title">A Feast to Celebrate</h2>
+            <p class="section-body">Come hungry! We are serving up homemade Dum Biryani, flavorful starters & dumplings, and a dedicated Pani Puri station.</p>
+            <div class="dietary-note" data-animate>
+                <span class="dietary-icon">🍽️</span>
+                <p><strong>Dietary Note:</strong> To ensure everyone has an incredible meal, we have designed a split menu with dedicated non-vegetarian and strictly separated vegetarian dishes and Biryani. <em>Please specify your preference in the RSVP below!</em></p>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" data-animate>
+                    <div class="menu-card-image">
+                        <img src="images/food-pani-puri.png" alt="Pani Puri station with crispy puris, fillings, and squeeze bottles of spicy and sweet water" loading="lazy">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Pani Puri Station</h3>
+                            <span class="menu-badge veg">Vegetarian</span>
+                        </div>
+                        <p>Self-serve with potato, chickpea & moong sprout fillings. Sweet & spicy waters in squeeze bottles.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-animate>
+                    <div class="menu-card-image">
+                        <img src="images/food-starters.png" alt="Platter of Chicken Tikka skewers, Seekh Kebabs, and steaming Momos in bamboo steamers" loading="lazy">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Starters & Dumplings</h3>
+                            <span class="menu-badge nonveg">Non-Veg & Veg</span>
+                        </div>
+                        <p>Chicken Tikka, Mutton Seekh Kebabs, Chicken/Shrimp Momos, Paneer Tikka & Veggie Momos.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-animate>
+                    <div class="menu-card-image">
+                        <img src="images/food-biryani.png" alt="Traditional copper Handi pot of aromatic Dum Biryani with saffron rice and boiled eggs" loading="lazy">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Dum Biryani</h3>
+                            <span class="menu-badge nonveg">Star Dish</span>
+                        </div>
+                        <p>A rich Chicken/Mutton Dum Biryani from a large Handi, plus a separate Veg/Paneer Biryani.</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-animate>
+                    <div class="menu-card-image">
+                        <img src="images/food-drinks.png" alt="Refreshments station with Mango Lassi, Rose Milk, Masala Chai, sparkling lemonade, and mocktails" loading="lazy">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3>Drinks & Refreshments</h3>
+                            <span class="menu-badge veg">All Guests</span>
+                        </div>
+                        <p>Mango Lassi, Rose Milk, Masala Chai, sparkling lemonade, mocktails, and chilled sodas.</p>
+                    </div>
+                </div>            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: RSVP FORM ===== -->
+    <section class="section rsvp-section" id="rsvp-section">
+        <div class="section-inner">
+            <h2 class="section-title">Let Us Know You're Coming!</h2>
+            <p class="section-subtitle">Kindly RSVP by May 10th to help us finalize the personalized details and menu.</p>
+
+            <div class="rsvp-card">
+                <form id="rsvp-form" class="rsvp-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="you@email.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="attending">Will you be attending? <span class="required">*</span></label>
+                            <select id="attending" name="attending" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Joyfully Accept">🎉 Joyfully Accept</option>
+                                <option value="Regretfully Decline">😢 Regretfully Decline</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests <span class="required">*</span></label>
+                            <select id="guests" name="guests" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="meal">Dietary Preference <span class="required">*</span><span class="label-hint">Help us prep the hot pots!</span></label>
+                        <select id="meal" name="meal" required>
+                            <option value="" disabled selected>Select your preference</option>
+                            <option value="Non-Vegetarian">🍖 Non-Vegetarian (Meat/Seafood Setup)</option>
+                            <option value="Strictly Vegetarian">🌿 Strictly Vegetarian (Separate Veg Setup)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="wishes">Message for Archana <span class="optional">(optional)</span></label>
+                        <textarea id="wishes" name="wishes" rows="4" placeholder="Leave a note for the Master of Science / Mom-to-Be!"></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="submit-btn">
+                        <span class="btn-text">Confirm RSVP</span>
+                        <span class="btn-loading hidden">
+                            <svg class="spinner" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="31.4" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="0.8s" repeatCount="indefinite"/></circle></svg>
+                            Sending...
+                        </span>
+                    </button>
+                </form>
+                <div id="status-message" class="status-message hidden" role="alert"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 5: FOOTER ===== -->
+    <footer class="site-footer">
+        <p class="footer-main">We can't wait to celebrate this incredible milestone with our favorite people.</p>
+        <p class="footer-sub">Designed with love for Archana. See you in Union City!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
