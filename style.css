@@ -449,6 +449,11 @@ body {
     margin-bottom: 60px;
 }
 
+.details-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
+}
+
 .detail-card {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
