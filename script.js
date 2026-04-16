@@ -5,7 +5,7 @@
 
 // ---- CONFIG ----
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby1Vg5gLLGnO8jWtnf9M5PQvWIiMq-kZHs7P0KYKsyPk8_jWR1p9YQybDwk_SimcPqV/exec';
-const EVENT_DATE = new Date('2026-05-18T14:00:00-07:00'); // May 18, 2026 at 2:00 PM PT
+const EVENT_DATE = new Date('2026-05-17T14:00:00-07:00'); // May 17, 2026 at 2:00 PM PT
 
 // =========================================
 // PARTICLES BACKGROUND
