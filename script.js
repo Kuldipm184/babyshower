@@ -23,7 +23,9 @@ const EVENT_DATE = new Date('2026-05-17T14:00:00-07:00'); // May 17, 2026 at 2:0
     }
 
     function createParticle() {
-        const isGold = Math.random() > 0.4;
+        const roll = Math.random();
+        const isGold = roll > 0.45;
+        const isRose = !isGold && roll > 0.2;
         return {
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
@@ -32,7 +34,9 @@ const EVENT_DATE = new Date('2026-05-17T14:00:00-07:00'); // May 17, 2026 at 2:0
             vy: (Math.random() - 0.5) * 0.25,
             color: isGold
                 ? `rgba(212, 175, 55, ${Math.random() * 0.25 + 0.08})`
-                : `rgba(255, 209, 220, ${Math.random() * 0.15 + 0.05})`
+                : isRose
+                    ? `rgba(183, 110, 121, ${Math.random() * 0.18 + 0.06})`
+                    : `rgba(250, 218, 221, ${Math.random() * 0.16 + 0.05})`
         };
     }
 
