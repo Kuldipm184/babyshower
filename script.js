@@ -31,8 +31,8 @@ const EVENT_DATE = new Date('2026-05-17T14:00:00-07:00'); // May 17, 2026 at 2:0
             vx: (Math.random() - 0.5) * 0.25,
             vy: (Math.random() - 0.5) * 0.25,
             color: isGold
-                ? `rgba(212, 175, 55, ${Math.random() * 0.25 + 0.08})`
-                : `rgba(255, 209, 220, ${Math.random() * 0.15 + 0.05})`
+                ? `rgba(201, 169, 110, ${Math.random() * 0.25 + 0.08})`
+                : `rgba(232, 196, 184, ${Math.random() * 0.15 + 0.05})`
         };
     }
 
