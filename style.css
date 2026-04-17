@@ -3,24 +3,25 @@
    Premium Design System
    ========================================= */
 
-/* --- Design Tokens (from user blueprint) --- */
+/* --- Design Tokens (event backdrop: maroon velvet, gold, rose gold, blush, cream) --- */
 :root {
     /* Core Palette */
-    --bg-primary: #0B1D3A;           /* Deep Navy Blue */
-    --bg-dark: #071228;              /* Even deeper navy for contrast */
-    --text-primary: #FDFBF7;         /* Off-White/Cream */
-    --text-secondary: rgba(253, 251, 247, 0.7);
-    --text-muted: rgba(253, 251, 247, 0.4);
-    --accent-gold: #D4AF37;          /* Metallic Gold */
+    --bg-primary: #630D16;           /* Deep maroon / burgundy */
+    --bg-dark: #2E0404;              /* Deeper wine for contrast & overlays */
+    --text-primary: #FFFDD0;         /* Pale champagne cream */
+    --text-secondary: rgba(255, 253, 208, 0.72);
+    --text-muted: rgba(255, 253, 208, 0.42);
+    --accent-gold: #D4AF37;          /* Metallic gold */
     --accent-gold-light: #E6C46A;
     --accent-gold-dim: rgba(212, 175, 55, 0.15);
-    --accent-pink: #FFD1DC;          /* Soft Pastel Pink */
-    --accent-blue: #ADD8E6;          /* Baby Blue */
+    --accent-pink: #FADADD;          /* Blush pink */
+    --accent-rose: #B76E79;          /* Rose gold / copper accent */
+    --accent-peach: #FFDAB9;         /* Warm muted peach */
 
     /* Glass Effect */
-    --glass-bg: rgba(255, 209, 220, 0.06);       /* Pink at 6% */
-    --glass-border: rgba(255, 209, 220, 0.1);     /* Pink at 10% */
-    --glass-hover: rgba(255, 209, 220, 0.1);
+    --glass-bg: rgba(250, 218, 221, 0.08);
+    --glass-border: rgba(212, 175, 55, 0.12);
+    --glass-hover: rgba(250, 218, 221, 0.12);
 
     /* Typography */
     --font-heading: 'Playfair Display', serif;
@@ -87,7 +88,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    background: rgba(7, 18, 40, 0.5);
+    background: rgba(99, 13, 22, 0.52);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border-bottom: 1px solid rgba(212, 175, 55, 0.08);
@@ -96,7 +97,7 @@ body {
 
 .navbar.scrolled {
     padding: 12px 40px;
-    background: rgba(7, 18, 40, 0.95);
+    background: rgba(46, 4, 4, 0.94);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -188,7 +189,7 @@ body {
     left: 0;
     right: 0;
     z-index: 999;
-    background: rgba(7, 18, 40, 0.97);
+    background: rgba(46, 4, 4, 0.96);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 24px;
@@ -227,15 +228,15 @@ body {
     padding: 120px 24px 80px;
     background:
         radial-gradient(ellipse at 25% 40%, rgba(212, 175, 55, 0.1) 0%, transparent 55%),
-        radial-gradient(ellipse at 75% 60%, rgba(255, 209, 220, 0.07) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 90%, rgba(11, 29, 58, 0.8) 0%, transparent 60%),
+        radial-gradient(ellipse at 75% 60%, rgba(250, 218, 221, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 90%, rgba(99, 13, 22, 0.72) 0%, transparent 60%),
         var(--bg-primary);
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(7, 18, 40, 0.2) 60%, var(--bg-primary) 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(46, 4, 4, 0.28) 60%, var(--bg-primary) 100%);
     z-index: 1;
 }
 
@@ -588,7 +589,7 @@ body {
    ========================================= */
 .menu-section {
     background:
-        radial-gradient(ellipse at 20% 60%, rgba(255, 209, 220, 0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 60%, rgba(250, 218, 221, 0.05) 0%, transparent 50%),
         transparent;
 }
 
@@ -596,8 +597,8 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    background: rgba(173, 216, 230, 0.06);
-    border: 1px solid rgba(173, 216, 230, 0.12);
+    background: rgba(255, 218, 185, 0.08);
+    border: 1px solid rgba(255, 218, 185, 0.16);
     border-radius: var(--radius-md);
     padding: 24px;
     max-width: 700px;
@@ -625,7 +626,7 @@ body {
 }
 
 .dietary-note strong {
-    color: var(--accent-blue);
+    color: var(--accent-rose);
 }
 
 .dietary-note em {
