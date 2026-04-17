@@ -125,6 +125,25 @@ const EVENT_DATE = new Date('2026-05-17T14:00:00-07:00'); // May 17, 2026 at 2:0
             mobileMenu.classList.remove('open');
         });
     });
+
+    // Alternating nav brand text
+    const brand = document.getElementById('nav-brand');
+    const brandTexts = [
+        '🎓 Mastering Motherhood',
+        '👶 Baby on Board',
+        '🎉 Milestones & Memories',
+        '💛 Celebrating Archana'
+    ];
+    let brandIndex = 0;
+
+    setInterval(() => {
+        brand.style.opacity = '0';
+        setTimeout(() => {
+            brandIndex = (brandIndex + 1) % brandTexts.length;
+            brand.textContent = brandTexts[brandIndex];
+            brand.style.opacity = '1';
+        }, 400);
+    }, 3000);
 })();
 
 // =========================================
