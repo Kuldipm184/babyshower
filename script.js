@@ -129,9 +129,9 @@ const EVENT_DATE = new Date('2026-05-17T14:00:00-07:00'); // May 17, 2026 at 2:0
     // Alternating nav brand text
     const brand = document.getElementById('nav-brand');
     const brandTexts = [
-        '🎓 Mastering Motherhood',
+        '🎓 Milestones & Memories',
         '👶 Baby on Board',
-        '🎉 Milestones & Memories',
+        '🍾 Pop the Bubbly!',
         '💛 Celebrating Archana'
     ];
     let brandIndex = 0;
