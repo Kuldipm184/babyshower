@@ -1005,6 +1005,29 @@ body {
     letter-spacing: 0.5px;
 }
 
+.registry-link-container {
+    margin: 16px 0 24px;
+}
+
+.registry-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(201, 169, 110, 0.1);
+    color: var(--accent-gold);
+    border: 1px solid rgba(201, 169, 110, 0.2);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s var(--ease-out);
+}
+
+.registry-link:hover {
+    background: rgba(201, 169, 110, 0.18);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(201, 169, 110, 0.2);
+}
+
 /* =========================================
    ANIMATIONS
    ========================================= */
